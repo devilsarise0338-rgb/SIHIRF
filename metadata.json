@@ -1,0 +1,7 @@
+{
+  "name": "PIET SIH Registration",
+  "description": "Internal SIH team registration portal for PIET.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
