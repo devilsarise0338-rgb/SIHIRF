@@ -48,6 +48,20 @@ export function useAuth() {
     return { data, error };
   };
 
+  const signInWithGoogle = async () => {
+    const { data, error } = await supabase.auth.signInWithOAuth({
+      provider: 'google',
+      options: {
+        redirectTo: `${window.location.origin}/register`,
+        queryParams: {
+          // This hints the Google selector to only show/allow piet.ac.in accounts
+          hd: 'piet.ac.in'
+        }
+      }
+    });
+    return { data, error };
+  };
+
   const signOut = async () => {
     await supabase.auth.signOut();
   };
@@ -58,6 +72,7 @@ export function useAuth() {
     loading,
     signInWithOtp,
     verifyOtp,
+    signInWithGoogle,
     signOut
   };
 }
