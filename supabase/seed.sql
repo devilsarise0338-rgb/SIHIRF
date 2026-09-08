@@ -1,0 +1,35 @@
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES
+-- SOFTWARE PROBLEM STATEMENTS
+('SIH26001', 'AI-based Predictive Maintenance System for Railway Tracks', 'software', 'Ministry of Railways', 'Smart Automation'),
+('SIH26002', 'Real-time Multilingual Translation App for Healthcare Workers', 'software', 'Ministry of Health and Family Welfare', 'MedTech / BioTech / HealthTech'),
+('SIH26003', 'Blockchain-based Verifiable Academic Credential System', 'software', 'Ministry of Education', 'Smart Education'),
+('SIH26004', 'Crowdsourced Disaster Management and Resource Allocation Platform', 'software', 'National Disaster Management Authority', 'Disaster Management'),
+('SIH26005', 'Machine Learning Model for Early Crop Disease Detection using Drone Imagery', 'software', 'Ministry of Agriculture', 'Agriculture, FoodTech & Rural Development'),
+('SIH26006', 'Gamified Cyber Security Awareness Platform for School Children', 'software', 'Ministry of Home Affairs', 'Smart Education'),
+('SIH26007', 'Intelligent Traffic Signal Control System Using Computer Vision', 'software', 'Ministry of Road Transport and Highways', 'Smart Vehicles'),
+('SIH26008', 'Predictive Crime Mapping and Analysis Dashboard', 'software', 'National Crime Records Bureau', 'Smart Automation'),
+('SIH26009', 'Virtual Reality Based Heritage Tour Guide App', 'software', 'Ministry of Tourism', 'Heritage & Culture'),
+('SIH26010', 'AI Chatbot for Legal Aid and Rights Awareness in Regional Languages', 'software', 'Ministry of Law and Justice', 'Smart Automation'),
+('SIH26011', 'Personalized Learning Path Generator for Neurodivergent Students', 'software', 'Ministry of Education', 'Smart Education'),
+('SIH26012', 'Energy Consumption Analytics Dashboard for Smart Cities', 'software', 'Ministry of Housing and Urban Affairs', 'Clean & Green Technology'),
+('SIH26013', 'Automated Detection of Deepfakes and Misinformation on Social Media', 'software', 'Ministry of Electronics and IT', 'Smart Automation'),
+('SIH26014', 'Supply Chain Traceability System for Organic Farming', 'software', 'Ministry of Agriculture', 'Agriculture, FoodTech & Rural Development'),
+('SIH26015', 'Mental Health Peer Support and Sentiment Analysis Platform', 'software', 'Ministry of Health', 'MedTech / BioTech / HealthTech'),
+
+-- HARDWARE PROBLEM STATEMENTS
+('SIH26016', 'Low-cost IoT Device for Real-time Groundwater Quality Monitoring', 'hardware', 'Ministry of Jal Shakti', 'Clean & Green Technology'),
+('SIH26017', 'Wearable Haptic Feedback Navigation Device for the Visually Impaired', 'hardware', 'Ministry of Social Justice', 'MedTech / BioTech / HealthTech'),
+('SIH26018', 'Autonomous Underwater Vehicle (AUV) for River Cleaning', 'hardware', 'Ministry of Environment', 'Clean & Green Technology'),
+('SIH26019', 'Smart Solar-powered Cold Storage for Rural Farmers', 'hardware', 'Ministry of Agriculture', 'Agriculture, FoodTech & Rural Development'),
+('SIH26020', 'Portable Non-invasive Anemia Detection Device', 'hardware', 'Ministry of Health', 'MedTech / BioTech / HealthTech'),
+('SIH26021', 'Automated Pothole Repair and Road Surface Patching Robot', 'hardware', 'Ministry of Road Transport', 'Smart Vehicles'),
+('SIH26022', 'Smart IoT EV Charging Socket with Load Balancing', 'hardware', 'Ministry of Power', 'Smart Vehicles'),
+('SIH26023', 'Drone-based Seed Bombing and Reforestation System', 'hardware', 'Ministry of Environment', 'Clean & Green Technology'),
+('SIH26024', 'Low-cost Braille Display and E-Reader', 'hardware', 'Ministry of Education', 'Smart Education'),
+('SIH26025', 'Smart Helmet with Integrated Fall Detection and Emergency SOS', 'hardware', 'Ministry of Home Affairs', 'Smart Vehicles'),
+('SIH26026', 'Modular Vertical Farming Hydroponics Rig for Urban Spaces', 'hardware', 'Ministry of Agriculture', 'Agriculture, FoodTech & Rural Development'),
+('SIH26027', 'IoT-enabled Smart Garbage Bin with Auto-Compaction', 'hardware', 'Swachh Bharat Mission', 'Clean & Green Technology'),
+('SIH26028', 'Wearable ECG and Vital Sign Monitor for Remote Patient Tracking', 'hardware', 'Ministry of Health', 'MedTech / BioTech / HealthTech'),
+('SIH26029', 'Anti-poaching Acoustic Sensor Network for Wildlife Reserves', 'hardware', 'Ministry of Environment', 'Smart Automation'),
+('SIH26030', 'Handheld Adulteration Detection Kit for Dairy Products', 'hardware', 'Food Safety and Standards Authority of India (FSSAI)', 'Agriculture, FoodTech & Rural Development')
+ON CONFLICT (id) DO NOTHING;
