@@ -108,6 +108,17 @@ export function Register() {
         if (!validateRegNo(m.reg_no)) return alert(`Invalid Registration Number for Member ${i + 2}.`);
         // if (!validateEmail(m.college_email)) return alert(`Member ${i + 2} must have a @piet.ac.in email.`);
       }
+      
+      const allRegNos = [formData.leaderRegNo, ...formData.members.map(m => m.reg_no)];
+      if (new Set(allRegNos).size !== allRegNos.length) {
+        return alert("Duplicate Registration Numbers found within your team!");
+      }
+
+      const allEmails = [user?.email, ...formData.members.map(m => m.college_email)].filter(Boolean);
+      if (new Set(allEmails).size !== allEmails.length) {
+        return alert("Duplicate Emails found within your team!");
+      }
+
       if (!hasFemale()) return alert("Your team must have at least one female member.");
     }
     if (step === 4) {
@@ -168,7 +179,14 @@ export function Register() {
       navigate('/confirm', { state: { teamCode: teamData.team_code, teamName: formData.teamName, category: formData.category, psId: formData.psId } })
 
     } catch (err: any) {
-      alert("Error: " + err.message)
+      const msg = err.message || '';
+      if (msg.includes('teams_team_name') || msg.includes('unique constraint "teams_team_name')) {
+        alert("This Team Name is already taken! Please go back and choose a different one.");
+      } else if (msg.includes('reg_no') || msg.includes('college_email') || msg.includes('leader_auth_id')) {
+        alert("Registration Failed: One of the team members (or you) is already registered in another team. A student can only be in one team!");
+      } else {
+        alert("Registration Error: " + msg);
+      }
     } finally {
       setSaving(false)
     }
