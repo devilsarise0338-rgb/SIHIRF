@@ -17,6 +17,14 @@ interface Member {
   reg_no: string;
 }
 
+interface ProblemStatement {
+  id: string;
+  title: string;
+  category: string;
+  organization: string;
+  theme: string;
+}
+
 interface FormState {
   leaderMobile: string;
   leaderRegNo: string;
@@ -24,6 +32,9 @@ interface FormState {
   members: Member[];
   category: 'software' | 'hardware' | '';
   psId: string;
+  psTitle: string;
+  psOrganization: string;
+  psTheme: string;
 }
 
 const emptyMember = (): Member => ({ name: '', gender: '', phone: '', college_email: '', reg_no: '' })
@@ -38,12 +49,9 @@ export default function RegistrationWizard() {
     const saved = localStorage.getItem('sih_registration_draft')
     if (saved) return JSON.parse(saved)
     return {
-      leaderMobile: '',
-      leaderRegNo: '',
-      teamName: '',
+      leaderMobile: '', leaderRegNo: '', teamName: '',
       members: [emptyMember(), emptyMember(), emptyMember(), emptyMember(), emptyMember()],
-      category: '',
-      psId: ''
+      category: '', psId: '', psTitle: '', psOrganization: '', psTheme: ''
     }
   })
 
@@ -51,14 +59,28 @@ export default function RegistrationWizard() {
     localStorage.setItem('sih_registration_draft', JSON.stringify(formData))
   }, [formData])
 
-  const [problemStatements, setProblemStatements] = useState<any[]>([])
-  useEffect(() => {
-    if (step === 5) {
-      supabase.from('problem_statements').select('*').eq('category', formData.category).then(({ data }) => {
-        if (data) setProblemStatements(data)
-      })
-    }
-  }, [step, formData.category])
+  // Search problem statements filtered by the selected category
+  const searchPS = async (query: string): Promise<ProblemStatement[]> => {
+    const q = query.trim().toUpperCase()
+    const { data } = await supabase
+      .from('problem_statements')
+      .select('id, title, organization, theme, category')
+      .eq('category', formData.category)
+      .or(`id.ilike.%${q}%,title.ilike.%${query.trim()}%`)
+      .limit(20)
+    return (data ?? []) as ProblemStatement[]
+  }
+
+  const selectPS = (ps: ProblemStatement | null) => {
+    setFormData(f => ({
+      ...f,
+      psId: ps?.id ?? '',
+      psTitle: ps?.title ?? '',
+      psOrganization: ps?.organization ?? '',
+      psTheme: ps?.theme ?? '',
+    }))
+  }
+
 
   const validateRegNo = (regNo: string) => /^PIET\d{2}[A-Z]{2}\d{3}$/.test(regNo)
   const validateEmail = (email: string) => email.endsWith('@piet.ac.in')
@@ -268,20 +290,37 @@ export default function RegistrationWizard() {
         )}
 
         {step === 5 && (
-          <div className="space-y-6">
-            <h2 className="text-xl font-semibold">Problem Statement</h2>
-            <SearchSelect 
-              value={formData.psId}
-              onChange={(val) => setFormData({ ...formData, psId: val })}
-              options={problemStatements}
-              placeholder="Search by ID or Title..."
+          <div className="space-y-4">
+            <div className="flex items-center justify-between">
+              <h2 className="text-xl font-semibold">Problem Statement</h2>
+              <span className={`text-xs font-medium px-2 py-1 rounded-full capitalize ${
+                formData.category === 'software' ? 'bg-pine/10 text-pine' : 'bg-ember/10 text-ember'
+              }`}>{formData.category}</span>
+            </div>
+            <p className="text-sm text-neutral">
+              Showing {formData.category} problem statements only.
+              Search by PS ID (e.g. SIH26001) or keywords from the title.
+            </p>
+            <SearchSelect
+              placeholder={`Search ${formData.category} problem statements…`}
+              value={formData.psId ? { id: formData.psId, title: formData.psTitle } : null}
+              onChange={(opt) => selectPS(opt as ProblemStatement | null)}
+              onSearch={searchPS}
             />
-            
             {formData.psId && (
-              <div className="p-4 bg-neutral/5 rounded-lg border border-neutral/20 mt-4">
-                <div className="font-mono text-sm text-pine font-medium mb-1">{formData.psId}</div>
-                <div className="font-medium mb-2">{problemStatements.find(p => p.id === formData.psId)?.title}</div>
-                <div className="text-sm text-neutral">{problemStatements.find(p => p.id === formData.psId)?.organization}</div>
+              <div className="p-4 bg-neutral/5 rounded-xl border border-neutral/20 space-y-2 mt-2">
+                <div className="font-mono text-sm text-pine font-semibold">{formData.psId}</div>
+                <div className="font-medium text-sm">{formData.psTitle}</div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3 pt-3 border-t border-neutral/10 text-xs text-neutral">
+                  <div>
+                    <span className="block font-medium text-ink mb-0.5">Organisation</span>
+                    {formData.psOrganization}
+                  </div>
+                  <div>
+                    <span className="block font-medium text-ink mb-0.5">Theme</span>
+                    {formData.psTheme}
+                  </div>
+                </div>
               </div>
             )}
           </div>
@@ -289,31 +328,24 @@ export default function RegistrationWizard() {
 
         {step === 6 && (
           <div className="space-y-6">
-            <h2 className="text-xl font-semibold">Review & Submit</h2>
-            
-            <div className="space-y-4 text-sm">
-              <div className="flex justify-between border-b pb-2">
-                <span className="text-neutral">Team Name</span>
-                <span className="font-medium">{formData.teamName}</span>
-              </div>
-              <div className="flex justify-between border-b pb-2">
-                <span className="text-neutral">Category</span>
-                <span className="font-medium capitalize">{formData.category}</span>
-              </div>
-              <div className="flex justify-between border-b pb-2">
-                <span className="text-neutral">Problem Statement</span>
-                <span className="font-medium">{formData.psId}</span>
-              </div>
-              <div className="flex justify-between border-b pb-2">
-                <span className="text-neutral">Leader</span>
-                <span className="font-medium">{user?.email}</span>
-              </div>
-              <div className="flex justify-between border-b pb-2">
-                <span className="text-neutral">Members</span>
-                <span className="font-medium">{formData.members.filter(m => m.name).length + 1} / 6</span>
-              </div>
+            <h2 className="text-xl font-semibold">Review &amp; Submit</h2>
+            <div className="space-y-2 text-sm">
+              {[
+                ['Team Name', formData.teamName],
+                ['Category', formData.category],
+                ['PS ID', formData.psId],
+                ['PS Title', formData.psTitle],
+                ['Organisation', formData.psOrganization],
+                ['Theme', formData.psTheme],
+                ['Leader', user?.email],
+                ['Members', `${formData.members.filter(m => m.name).length + 1} / 6`],
+              ].map(([label, value]) => (
+                <div key={label} className="flex justify-between border-b pb-2">
+                  <span className="text-neutral">{label}</span>
+                  <span className="font-medium capitalize text-right max-w-[60%]">{value}</span>
+                </div>
+              ))}
             </div>
-            
             <div className="bg-ember/10 text-ember text-sm p-4 rounded-lg">
               Check everything carefully. You cannot edit members after submission.
             </div>
@@ -322,7 +354,6 @@ export default function RegistrationWizard() {
 
         <div className="mt-8 flex justify-between pt-6 border-t border-neutral/10">
           <Button variant="ghost" onClick={prevStep} disabled={step === 1 || saving}>Back</Button>
-          
           {step < 6 ? (
             <Button onClick={nextStep}>Continue</Button>
           ) : (

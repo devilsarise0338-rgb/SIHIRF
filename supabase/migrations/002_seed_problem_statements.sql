@@ -1,0 +1,1410 @@
+-- ============================================================
+-- SIH 2026 Problem Statements – idempotent seed
+-- Generated: 2026-09-08T16:21:42.322600 UTC
+-- Total rows: 233
+-- ============================================================
+
+BEGIN;
+
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26001', 'AI-Based early warning and landslide Risk Monitoring System in NER', 'software', 'Ministry of Development of North Eastern Region (MDoNER)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26002', 'Al-Based Smart Logistics and Accessibility Intelligence Platform for North Eastern Region (NER)', 'software', 'Ministry of Development of North Eastern Region (MDoNER)', 'Transportation & Logistics')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26003', 'AI-Based Cognitive Gaming and Memory Assistance Platform for Elderly Dementia Patients in North Eastern Region (NER)', 'software', 'Ministry of Development of North Eastern Region (MDoNER)', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26004', 'Al-Assisted Early Detection System for Osteoarthritis (OA) Risk Markers in North Eastern Region (NER)', 'hardware', 'Ministry of Development of North Eastern Region (MDoNER)', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26005', 'Solar-Powered Smart Mini Cold Storage System for Fresh Vegetables in North Eastern Region (NER)', 'hardware', 'Ministry of Development of North Eastern Region (MDoNER)', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26006', 'Development of an Intelligent Freight Forecasting Model for Optimized Vessel Chartering and Bulk Cargo Procurement from overseas to East Coast of India', 'software', 'Ministry of Steel', 'Transportation & Logistics')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26007', 'Safe and Efficient Operation of Mine Vehicles in Fog and Low-Visibility Conditions in Open Cast Iron Ore Mines.', 'hardware', 'Ministry of Steel', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26008', 'Belt Joint Rupture and Conveyor Belt Damages in Iron Ore Mining Industry: Intelligent Monitoring and Prediction of Conveyor Belt Joint Rupture and Damages in Iron Ore Mining Industry.', 'hardware', 'Ministry of Steel', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26009', 'Using AI/ML and Space Technology to Identify Manganese Reserves and Overcome Production Shortfalls.', 'software', 'Ministry of Steel', 'Space Technology')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26010', 'Survey/Resurvey of Rural Agricultural Land in lndia', 'hardware', 'Ministry of Rural Development', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26011', '3D ULPIN Generation and vertical Property Mapping SYstem', 'software', 'Ministry of Rural Development', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26012', 'AI-Based Automated Urban Parcel Mapping and Cadastral Feature Extraction System using Drone lmagery', 'software', 'Ministry of Rural Development', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26013', 'Automated lntegration and lntelligent Harmonization of Multi-source Geospatial Data for urban Land Record Management.', 'software', 'Ministry of Rural Development', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26014', 'An lntegrated GIS-based Digital Public lnfrastructure for Land Governance', 'software', 'Ministry of Rural Development', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26015', 'Application of Geospatial Techniques for visualization and analysis to interpret Geo-Coded lmages to enhance watershed Development Outcomes.', 'software', 'Ministry of Rural Development', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26016', 'Real-Time National Land Acquisition & Management System for End-to-End Digital Monitoring and Decision Support', 'software', 'Ministry of Rural Development', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26017', 'Predictive Analytics System for Early Detection of Land Acquisition Delays', 'software', 'Ministry of Rural Development', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26018', 'Intelligent Land Record Digitization and Validation System', 'software', 'Ministry of Rural Development', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26019', 'National Digital Platform for Research, Policy Innovation, and Evidence-Based Land Governance', 'software', 'Ministry of Rural Development', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26020', 'Design and Development of Innovative Hand-Spinning Equipment for Enhancing Khadi Artisan Productivity and Income', 'hardware', 'Ministry of MSME', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26021', 'Honey Chain: A block chain-based system for honey traceability and smart beekeeping management.', 'software', 'Ministry of MSME', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26022', 'Design and develop a smart, solar-powered drying and compact packaging system to support home-based agarbatti manufacturing by rural women artisans.', 'hardware', 'Ministry of MSME', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26023', 'AI-Powered Geological, Mining and other Reporting Solution for CMPDI/CIL subsidiaries', 'software', 'Ministry of Coal', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26024', 'AI-Based Smart Governance and Compliance Monitoring System for Coal Mines', 'software', 'Ministry of Coal', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26025', 'Development of an AI-enabled Low Cost Real Time Mine Subsidence Monitoring, Prediction and Early Warning System for Underground Coal Mines in India', 'hardware', 'Ministry of Coal', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26026', 'Development of Mobile (Quadruped)/Handheld Device/System for Real-Time Detection of Narcotics and Explosives across Indian Railways.', 'hardware', 'Ministry of Railways', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26027', 'Al-Powered Automatic Block Planning to Maximize Asset Availability for Train Operations on Indian Railways', 'software', 'Ministry of Railways', 'Transportation & Logistics')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26028', 'Dynamic Forecast of Expected Time of Arrival (ETA) for Coaching Trains', 'software', 'Ministry of Railways', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26029', 'Automated High-Current Short-Circuit Test System for IEC 60898-1:2015 MCB Compliance.', 'hardware', 'Ministry of Consumer Affairs, Food & Public Distribution', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26030', 'Automated Cable Specimen Preparation System for IS 10810 and IS 7098 Compliance.', 'hardware', 'Ministry of Consumer Affairs, Food & Public Distribution', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26031', 'Quality assessment and grading of onions are often subjective and vary across procurement centers, resulting in disputes and inconsistencies.', 'software', 'Ministry of Consumer Affairs, Food & Public Distribution', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26032', 'Farmers often face long waiting times, lack of information regarding procurement schedules, and uncertainty about procurement status.', 'software', 'Ministry of Consumer Affairs, Food & Public Distribution', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26033', 'Multiple intermediaries reduce farmers earnings and increase consumer prices.', 'software', 'Ministry of Consumer Affairs, Food & Public Distribution', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26034', 'Software System to check compliance of Packaged Commodities under Legal Metrology(Packaged Commodities) Rules, 2011 by scanning products, images and labels.', 'software', 'Ministry of Consumer Affairs, Food & Public Distribution', 'Miscellaneous')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26035', 'Development of a Software Program/Application for Generation of Test Reports for Non-Automatic Weighing Instruments (NAWI) as per OIML Recommendation R- 76', 'software', 'Ministry of Consumer Affairs, Food & Public Distribution', 'Miscellaneous')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26036', 'Development of an Online Verification System for Weighing and Measuring Instruments', 'software', 'Ministry of Consumer Affairs, Food & Public Distribution', 'Miscellaneous')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26037', 'Adaptive Path Planning and Collision Avoidance for Autonomous Vehicles on Unstructured Indian Roads', 'software', 'MathWorks', 'Smart Vehicles')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26038', 'Explainable AI for Diabetic Retinopathy Screening in Rural India', 'software', 'MathWorks', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26039', 'Al-Powered Underground Mine Safety, Monitoring and Rescue System.', 'hardware', 'Government of Jharkhand', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26040', 'Smart Water Purification and Quality Monitoring System for Rural and Mining-Affected Areas.', 'hardware', 'Government of Jharkhand', 'Clean & Green Technology')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26041', 'AR-Based Vocational Training Simulator for Industrial Safety in Jharkhand''s Mining & Manufacturing Sector', 'software', 'Government of Jharkhand', 'Smart Education')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26042', 'Al-Powered Vernacular Pedagogy and Real-Time Translation Tool for Mother Tongue-Based Primary Education', 'software', 'Government of Jharkhand', 'Smart Education')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26043', 'A digital platform to crowdsource societal challenges and facilitate collaborative problem solving through universities and industry partnerships', 'software', 'Government of Jharkhand', 'Smart Education')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26044', 'Portal for Academia - Industry collaboration for Skill Mapping, Internships and Placement', 'software', 'Ministry of Ayush', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26045', 'IP-SAKTI Sahayak a multilingual, RAG-based (source-cited) AI assistant for Intellectual Property and regulatory guidance in Ayurveda, across national and international regimes.', 'software', 'Ministry of Ayush', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26046', 'AIIA Clinical Trials Dashboard - a real-time, cloud-based, GCP-compliant Clinical Trial Management System (CTMS) for Ayurveda research, with CDISC/FHIR-interoperable data, role-based KPIs, and integrated ethics, regulatory (CTRI / NDCT Rules 2019) and pharma covigilance tracking.', 'software', 'Ministry of Ayush', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26047', 'Patient Case-Taking Software', 'software', 'Ministry of Ayush', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26048', 'iKwath - a pod-based smart Kwatha (Kadha) maker that prepares a fresh, AFI/API-standardized decoction from coarse powder (yavaku?a c?r?a) on demand, in the shortest practical time without altering the decoctions quality or yield', 'hardware', 'Ministry of Ayush', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26049', 'Modifications to improve the reliability, efficiency,and lifespan of electrical and electronic equipment and systems in the ambient condition of subzero temperature and low pressure of High Altitude Areas(HAA) and Super High Altitude Areas (SHAA) of Ladakh region.', 'hardware', 'DRDO', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26050', 'High Altitude Performance Optimization and Robust Design of Anti-Drone System.', 'hardware', 'DRDO', 'Robotics and Drones')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26051', 'Software Based Model Development for Design of Area Specific Shelter for Thermal Comfort Maintenance.', 'software', 'DRDO', 'Miscellaneous')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26052', 'To develop an AI/ML-enabled adaptive noise cancellation (ANC) system that effectively suppresses stationary, non-stationary, and impulsive defence noises while maintaining high speech intelligibility and real-time performance on embedded hardware.', 'hardware', 'DRDO', 'Miscellaneous')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26053', 'Adaptive Variable Resolution 2.5D Lidar Mapping for Dynamic Environment Perception', 'software', 'DRDO', 'Smart Vehicles')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26054', 'AI-Enabled Real-Time Digital Twin System for Health Monitoring, Fault Prediction and Mission Reliability Enhancement of Aero Piston Engines used in MALE UAVs.', 'software', 'DRDO', 'Robotics and Drones')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26055', 'Smart Scan strategy for Electronic Warfare', 'software', 'DRDO', 'Robotics and Drones')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26056', 'Development of a Real-time Airfare Price Index for India through Automated Web Scraping of Airline and Online Travel Aggregator Portals for Augmentation of the Consumer Price Index (CPI).', 'software', 'MoSPI', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26057', 'AI-Powered Automated Underwater Marine Debris and Anomaly Detection System using Side-Scan Sonar Imagery', 'software', 'Ministry of Earth Sciences (MoES)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26058', 'Development of a Low-Power, Real-Time Adaptive Software-Defined Sonar Transmitter Payload for Autonomous Underwater Vehicles (AUVs)', 'hardware', 'Ministry of Earth Sciences (MoES)', 'Robotics and Drones')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26059', 'AI-Enabled Antarctic Sea-Ice, Iceberg Trajectory, and Navigation Decision Support System', 'software', 'Ministry of Earth Sciences (MoES)', 'Transportation & Logistics')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26060', 'Digital Platform for efficient remote management of Indian Antarctic Research Stations', 'software', 'Ministry of Earth Sciences (MoES)', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26061', 'AI-Driven Smart Energy Management System for Polar Research Stations', 'software', 'Ministry of Earth Sciences (MoES)', 'Clean & Green Technology')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26062', 'Integrated Polar Expedition Logistics and Asset Management System', 'software', 'Ministry of Earth Sciences (MoES)', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26063', 'Integrated Polar Science Outreach, Knowledge Repository and Media Dissemination Portal', 'software', 'Ministry of Earth Sciences (MoES)', 'Smart Education')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26064', 'Low-Cost Deployable Seafloor Metal Detection Sensor for Ocean Resource Exploration', 'hardware', 'Ministry of Earth Sciences (MoES)', 'Robotics and Drones')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26065', 'Autonomous Low-Cost Ocean Observation Platform for Polar and Southern Oceans', 'hardware', 'Ministry of Earth Sciences (MoES)', 'Robotics and Drones')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26066', 'OceanEmbed - Satellite Embedding-Based Deep Learning Framework for Reconstruction of Subsurface Ocean Temperature from Surface Satellite Observations.', 'software', 'Ministry of Earth Sciences (MoES)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26067', 'Develop a web-based interactive 3D visualization platform that integrates numerical ocean model outputs and in-situ observations.', 'software', 'Ministry of Earth Sciences (MoES)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26068', 'WeatherGPT: Conversational AI for Weather Forecasting, Alerts, and Climate Information', 'software', 'Ministry of Earth Sciences (MoES)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26069', 'National Weather Big Data Analytics Platform', 'software', 'Ministry of Earth Sciences (MoES)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26070', 'To develop an Artificial Intelligence (AI) / Machine Learning (ML) based system for identification, classification, and prediction of different tropical cyclone patterns using multi-source satellite data.', 'software', 'Ministry of Earth Sciences (MoES)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26071', 'AI/ML-Based Integrated heavy rainfall Early Warning and Inundation Prediction System using Satellite, Radar, observational Weather and numerical weather prediction model data.', 'software', 'Ministry of Earth Sciences (MoES)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26072', 'AIML based Nowcasting of thunderstorm and lightning using atmospheric observation including multiple radars, satellite, lightning and model data.', 'software', 'Ministry of Earth Sciences (MoES)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26073', 'AI/ML-Based Intelligent Anomaly Detection for Automatic Weather Stations (AWS)', 'software', 'Ministry of Earth Sciences (MoES)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26074', 'Downscaling of weather forecast from Block level to Panchayat level: Inferring high-resolution plots/ data/ information from low-resolution plot /data /information /variables for agro-meteorological advisory services.', 'software', 'Ministry of Earth Sciences (MoES)', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26075', 'Participants are invited to design and develop **CAPACITY CONNECT A Digital Capacity Building and Learning Management Portal** to support organizational training, competency development, and knowledge sharing through a centralized web-based platform.', 'software', 'Ministry of Earth Sciences (MoES)', 'Smart Education')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26076', 'Development of personalized homepage for ''Mausam'' mobile application:', 'software', 'Ministry of Earth Sciences (MoES)', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26077', 'AI-Driven Hyper-Local Early Warning System for Severe Weather Nowcasting', 'software', 'Ministry of Earth Sciences (MoES)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26078', 'AI-Driven Spatio-Temporal Tracking of Extreme Weather Anomalies in Medium-Range Forecasts', 'software', 'Ministry of Earth Sciences (MoES)', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26079', 'AI-Based Forecast Bust Detection for Medium-Range Weather Forecasts', 'software', 'Ministry of Earth Sciences (MoES)', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26080', 'Regime-Aware AI Post-Processing of Monsoon Rainfall Forecasts', 'software', 'Ministry of Earth Sciences (MoES)', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26081', 'Hybrid AI–NWP Multi-Model Forecast Blending System', 'software', 'Ministry of Earth Sciences (MoES)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26082', 'Air Pollution–Weather Coupled Forecasting System (Delhi NCR Focus)', 'software', 'Ministry of Earth Sciences (MoES)', 'Clean & Green Technology')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26083', 'Extreme Heatwave Early Warning and Human Thermal Stress Index', 'software', 'Ministry of Earth Sciences (MoES)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26084', 'Convective scale nowcasting for Thunderstorms, Hail & Cloudbursts (06 hr)', 'software', 'Ministry of Earth Sciences (MoES)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26085', 'Urban Flood Nowcasting System (Drainage and Rainfall Coupling)', 'software', 'Ministry of Earth Sciences (MoES)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26086', 'Hyperlocal Monsoon Onset & Break Prediction System (Block/Village Scale)', 'software', 'Ministry of Earth Sciences (MoES)', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26087', 'AI & LMS - Enabled Cooperative Capacity Building, ERP & Employment Ecosystem', 'hardware', 'Ministry of Cooperation', 'Smart Education')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26088', 'Multilingual Cooperative Governance & Legal Assistance Chatbot', 'hardware', 'Ministry of Cooperation', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26089', 'Cooperative Gig Services Platform for Household & Community Services', 'software', 'Ministry of Cooperation', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26090', 'AI-Driven Market Linkage and Smart Cataloging Mobile Application for Marginalized Artisans', 'software', 'Ministry of Social Justice and Empowerment (MoSJE)', 'Heritage & Culture')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26091', 'AI-Driven Hyper-Local Business Advisory and Financial Structuring Assistant for Rural Micro-Entrepreneurs', 'software', 'Ministry of Social Justice and Empowerment (MoSJE)', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26092', 'AI-Driven Scheme Matching for Marginalized Entrepreneurs', 'software', 'Ministry of Social Justice and Empowerment (MoSJE)', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26093', 'AI-Based Real-Time Stress and Trauma Assessment Module for Victims/Complainants Accessing NHAA (14566) and Integrated Portal', 'software', 'Ministry of Social Justice and Empowerment (MoSJE)', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26094', 'AI-Powered Dynamic Mental Health Monitoring and Distress Prediction System for Victims of Atrocities', 'software', 'Ministry of Social Justice and Empowerment (MoSJE)', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26095', 'Smart Real-Time Monitoring & Inspection Mobile App', 'software', 'Ministry of Social Justice and Empowerment (MoSJE)', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26096', 'Digital Heritage Archive for Memorials, Manuscripts & Ambedkar: AI-Powered Institutional Archive and Audio-Visual Knowledge Platform', 'hardware', 'Ministry of Social Justice and Empowerment (MoSJE)', 'Smart Education')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26097', 'AI-Driven voice Assistant for livelihood Mapping and NSQF-Aligned Skilling Recommendations for SC Communities under GIA component of PM-AJAY', 'software', 'Ministry of Social Justice and Empowerment (MoSJE)', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26098', 'Development of a Low-Cost Precision Guidance and Smart Electronic Fuze System for a 155 mm Artillery Shell', 'hardware', 'Ministry of Defence (MoD)', 'Smart Vehicles')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26099', 'AI-Driven Standardization and Harmonization of Material Codes Across CPSEs', 'software', 'Ministry of Petroleum & Natural Gas', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26100', 'AI-Powered Integrated Bid Compliance Verification Platform for GeM Procurement', 'software', 'Ministry of Petroleum & Natural Gas', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26101', 'Develop an AI enabled learning platform that identifies competency gaps, recommends personalized training through integration with the iGOT Karmayogi ecosystem, and capable of generating Quizzes and Multiple choice questions (MCQs) from uploaded learning materials to strengthen capacity building in India''s Official Statistical System.', 'software', 'MoSPI', 'Smart Education')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26102', 'Development of an AI-powered system to detect anomalies, fraud, and inefficiencies in MPLAD Scheme implementation regd.', 'software', 'MoSPI', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26103', 'Use case on web-based integrated project-monitoring platform', 'software', 'MoSPI', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26104', 'AI-Powered Real-Time Detection and Prevention of Voice Cloning Impersonation Attacks', 'software', 'All India Council for Technical Education (Cyber Security Cell)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26105', 'AI-Powered Continuous Cyber Risk Quantification and Investment Optimization Platform', 'software', 'All India Council for Technical Education (Cyber Security Cell)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26106', 'AI-Powered Email Threat Detection, GeoLocation and Forensic Intelligence Platform', 'software', 'All India Council for Technical Education (Cyber Security Cell)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26107', 'Al-powered Intelligent Assistant for Indian Standards and BIS Services for Industries and Consumers', 'software', 'Ministry of Consumer Affairs, Food & Public Distribution', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26108', 'AI-Powered Recommendation Engine for Identifying Applicable Indian Standards for Procurement Specifications', 'software', 'Ministry of Consumer Affairs, Food & Public Distribution', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26109', 'Al-Based Predictive Modelling for Early Forecasting of Bovine Mastitis in lndian Dairy Farms', 'hardware', 'Ministry of Fisheries, Animal Husbandry & Dairying', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26110', 'Development of a Low-Cost Light-weight Milk Chilling Can for Small-Scale Dairy Farmers', 'hardware', 'Ministry of Fisheries, Animal Husbandry & Dairying', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26111', 'Smart Al-Enabled Rapid Feed and Silage Quality Testing System for Dairy Farmers', 'software', 'Ministry of Fisheries, Animal Husbandry & Dairying', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26112', 'Design and Develop a Modular Autonomous Mobile Robot (AMR) Platform for Smart Warehouse Automation', 'hardware', 'Autodesk', 'Robotics and Drones')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26113', 'Human augmentation technologies are transforming healthcare,rehabilitation, industrial ergonomics, assistive living, sports, and personal mobility by improving human capabilities and enhancing quality of life.', 'hardware', 'Autodesk', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26114', 'Smart City Site Planning using Autodesk Forma Site Design', 'software', 'Autodesk', 'Miscellaneous')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26115', 'Design and Develop a Smart Mobile Medical-Waste Collection and Segregation System', 'software', 'Autodesk', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26116', 'Urban Mixed-Use Design Challenge-Design a centrally located mixed-use building in Autodesk Revit with commercial spaces (Ground + 1st floor) and residential units (up to 8 floors). 1 Level of Basement (Car Parking + EV Charging), Total (B+G+9)(Note: Plot size and all required dimensions may be assumed by students (in mm units).', 'software', 'Autodesk', 'Miscellaneous')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26117', 'Sovereign On-Premise Agentic AI Workbench using Open-Weight Multimodal LLMs for Confidential Industrial Work', 'software', 'Mangalore Refinery and Petrochemicals Limited (MRPL)', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26118', 'Passive Colorimetric H2S Exposure-Dosimeter Wristband with AI-Based Quantitative Reading', 'hardware', 'Mangalore Refinery and Petrochemicals Limited (MRPL)', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26119', 'Indigenous GPU-Accelerated Optimization Solver (Sovereign Alternative to Express / CEPLEX)', 'software', 'Mangalore Refinery and Petrochemicals Limited (MRPL)', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26120', 'Digital Twin for Well-to-Surface Optimization of Cyclic Steam Stimulation (CSS) and Sucker Rod Pump (SRP) Operations for Heavy Oil Wells of Baghewala Field.', 'software', 'Oil India Limited', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26121', 'eRTMAC-NWIS (Nearby Wells Intelligence System): An AI-Powered Offset Well Knowledge and Decision Support Platform for Drilling Operations', 'software', 'Oil India Limited', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26122', 'Intelligent Data Capture & Schedule-Linking Layer for Infrastructure Project Management: Real-Time Actual Progress Tracking (Planning-to-Execution Bridge)', 'software', 'Oil India Limited', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26123', 'Edge-AI Based Distributed Fleet Coordination for Autonomous Mobile Robots (AMRs) in Smart Warehouses', 'software', 'Bharat Electronics Limited', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26124', 'AI-Powered Mobile Urban Intelligence Platform Using Public Transport Fleet', 'software', 'Bharat Electronics Limited', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26125', 'Blockchain-Based Secure Platform for Identity,Access Control, and Digital Asset Management', 'software', 'Bharat Electronics Limited', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26126', 'Vision Based Autonomous Navigation for Unmanned Ground Vehicle for Outdoor environment', 'software', 'Bharat Electronics Limited', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26127', 'City-Wide AI Engine for Multi-Camera ANPR Trajectory Tracking and Urban Traffic Analytics', 'software', 'Bharat Electronics Limited', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26128', 'Efficient systems for early detection,prevention,and management of livestock diseases and animal health issues', 'software', 'Government Of Maharashtra', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26129', 'System integration and interoperability among government digital platforms,resulting in fragmented service delivery', 'software', 'Government Of Maharashtra', 'Miscellaneous')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26130', 'Efficiency in streamlining industrial approvals,compliance processes,and access to government support services', 'software', 'Government Of Maharashtra', 'Miscellaneous')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26131', 'Early detection and management of crop diseases and pest infestations', 'software', 'Government Of Maharashtra', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26132', 'Strengthening market linkages and price discovery for farmers', 'software', 'Government Of Maharashtra', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26133', 'Accessibility and quality of public healthcare services,particularly in rural and underserved areas', 'software', 'Government Of Maharashtra', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26134', 'Challenges in aligning skill development programs with industry requirements and emerging job market demands', 'software', 'Government Of Maharashtra', 'Miscellaneous')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26135', 'Difficulties in tracking employment outcomes,skill gaps, and the impact of skilling initiatives', 'software', 'Government Of Maharashtra', 'Miscellaneous')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26136', 'Startup friendly public procurement mechanism that enables government departments to identify,pilot, procure,and scale innovative solutions from eligible startups', 'software', 'Government Of Maharashtra', 'Miscellaneous')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26137', 'Quantum-Inspired Intelligent Traffic Route Optimization in Transportation Systems Using Metaheuristic Optimization', 'software', 'Egreen Quanta', 'Transportation & Logistics')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26138', 'Quantum-Inspired Fuel Consumption Prediction and Green Fleet Optimization', 'software', 'Egreen Quanta', 'Clean & Green Technology')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26139', 'Hybrid Quantum Machine Learning Platform for Early Disease Detection', 'software', 'Egreen Quanta', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26140', 'AI-Based Interactive Quantum Algorithm Learning Platform', 'software', 'Egreen Quanta', 'Smart Education')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26141', 'Quantum-Inspired Cyber Threat Detection for Digital Signature Security', 'software', 'Egreen Quanta', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26142', 'Deep Learning Based Super Resolution Mapping (SRM) from Medium Resolution Satellite Imageries', 'software', 'National Technical Research Organisation (NTRO)', 'Space Technology')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26143', 'Leveraging satellite imagery to determine Oil spills at sea along with AIS data correlations to identify vessel responsible for the spill.', 'software', 'National Technical Research Organisation (NTRO)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26144', 'Design & Development of a High-Sensitivity Micro barometer Infrasound sensor', 'hardware', 'National Technical Research Organisation (NTRO)', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26145', 'AI-Based Detection of Cyber Threats in Unidirectional IP Traffic', 'software', 'National Technical Research Organisation (NTRO)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26146', 'AI-Powered Monitoring & Analysis of Bitcoin Transaction Traffic', 'software', 'National Technical Research Organisation (NTRO)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26147', 'Automated model for analysis of .IQ and .wav files along with signal parameter extraction', 'software', 'National Technical Research Organisation (NTRO)', 'Space Technology')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26148', 'Creation of scripts/functions with new programming language to commence Computer & Network forensic analysis without triggering security solutions', 'software', 'National Technical Research Organisation (NTRO)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26149', 'Design and Development of an Integrated Secure Data Erasure and Advanced File Recovery Tool for Digital Forensics and Data Sanitization', 'software', 'National Technical Research Organisation (NTRO)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26150', 'Development of a Multi-Vendor DVR/NVR Forensic Analysis Tool for Standardized Acquisition, Recovery, and Analysis of Surveillance Evidence.', 'software', 'National Technical Research Organisation (NTRO)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26151', 'Dark web threat actor de-anonymization', 'software', 'National Technical Research Organisation (NTRO)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26152', 'Social Media Analytics', 'software', 'National Technical Research Organisation (NTRO)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26153', 'AI based Network Attack Forecasting from Network Traffic Data', 'software', 'National Technical Research Organisation (NTRO)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26154', 'Gen AI Platform for Automated Content Transformation', 'software', 'National Technical Research Organisation (NTRO)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26155', 'AI-Driven Multi-Vendor Network Security Compliance Auditor', 'software', 'National Technical Research Organisation (NTRO)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26156', 'Universal Log Pre-processing Framework', 'software', 'National Technical Research Organisation (NTRO)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26157', 'Supervisory Analytics Tool for SOC Assessment (SAT-SA)', 'software', 'National Technical Research Organisation (NTRO)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26158', 'Single-Pass Drone Video to Accurate 3D Model Generation System', 'software', 'National Technical Research Organisation (NTRO)', 'Robotics and Drones')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26159', 'SecureMailScope: AI-Assisted Cryptographic Security Posture Assessment for Secure Email Communications', 'software', 'National Technical Research Organisation (NTRO)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26160', 'AI-Powered IPsec VPN Protocol Analyzer and Security Assessment Framework', 'software', 'National Technical Research Organisation (NTRO)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26161', 'Dam Break Inundation Modelling Using Hydrodynamic Modelling of any River', 'software', 'National Technical Research Organisation (NTRO)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26162', 'AI-Based Detection and Classification of Industrial Fires and Persistent Thermal Sources Using NASA FIRMS, OSM & Satellite Data', 'software', 'National Technical Research Organisation (NTRO)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26163', 'Security Assessment of the World Monitor application', 'software', 'National Technical Research Organisation (NTRO)', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26164', 'Enterprise Cryptographic Discovery & Analysis Tool (ECDAT)', 'software', 'National Technical Research Organisation (NTRO)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26165', 'AI/NLP Engine to Detect Serious Injury & Fatality (SIF) Precursors in OIL''s Unsafe-Act/Unsafe-Condition and Near-Miss Reports', 'software', 'Oil India Limited', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26166', 'Multi-modal, Sun angle and scale invariant image correspondence using Chandrayaan-2 optical images (OHRC, TMC and IIRS)', 'software', 'Indian Space Research Organisation(ISRO)', 'Space Technology')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26167', 'SatQuery AI - An Interactive Vision-Language Assistant for Multimodal Remote Sensing Image Analysis through Text Queries', 'software', 'Indian Space Research Organisation(ISRO)', 'Space Technology')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26168', 'AI-ML based Intelligent Dead Reckoning system for seamless navigation', 'software', 'Indian Space Research Organisation(ISRO)', 'Smart Vehicles')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26169', 'Development of an AI-Based Virtual Camera Tracking System for Coarse Alignment of Mobile Free Space Optical Communication (FSOC) Terminals', 'software', 'Indian Space Research Organisation(ISRO)', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26170', 'AI-Driven Anomaly Detection in Component Burn-In & Screening', 'software', 'Indian Space Research Organisation(ISRO)', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26171', 'On-device Visual Perception for Light-weight Browser Agents', 'software', 'Indian Space Research Organisation(ISRO)', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26172', 'Low Latency and Efficient Voice Activator for Edge Devices', 'hardware', 'Indian Space Research Organisation(ISRO)', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26173', 'iTantra -Indian Multilingual TTS & STT Aided Neural Transceiver Radio Access for low bitrate links', 'software', 'Indian Space Research Organisation(ISRO)', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26174', 'AI Human Activity Recognition for On-board BAS Experiments', 'software', 'Indian Space Research Organisation(ISRO)', 'Space Technology')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26175', 'DepthWizard - Single-View Height Estimation and 3D Flythrough', 'software', 'Indian Space Research Organisation(ISRO)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26176', 'ORCA Marine EcOsystem Reasoning with Collaborative Agents', 'software', 'Indian Space Research Organisation(ISRO)', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26177', 'A deployable AI-powered autonomous drone that aids search-and-rescue operations by detecting people and hazards, thereby improving responder safety and reducing victim discovery time.', 'hardware', 'Qualcomm Inc', 'Robotics and Drones')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26178', 'A resilient, AI-powered environmental monitoring network that provides early detection, localized intelligence, and actionable alerts for floods, forest fires, pollution events, and other environmental hazards common in India, enabling authorities and communities to shift from reactive disaster response to proactive risk prevention.', 'hardware', 'Qualcomm Inc', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26179', 'To build an AI-powered retail intelligence platform that delivers real-time shopper analytics, automated inventory visibility, and proactive queue management through on-device AI,enabling retailers to reduce stock-outs, improve customer experience, optimize staffing, and increase operational efficiency while maintaining privacy and minimizing cloud dependency.', 'hardware', 'Qualcomm Inc', 'Miscellaneous')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26180', 'A field-deployable AI-powered Smart Farming Assistant that helps farmers detect crop diseases, pests, nutrient deficiencies, and irrigation needs at an early stage, while improving resilience against droughts, floods, heat waves, and other agricultural risks common in India. The solution should enable higher yields, lower input costs, more efficient water usage, and faster response to emerging threats through real-time on-device intelligence.', 'hardware', 'Qualcomm Inc', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26181', 'A secure, AI-powered Personal Health Companion that delivers real-time, privacy-preserving health monitoring and early warning capabilities, helping individuals recognize health risks before they become emergencies. The solution should improve resilience during heat waves, floods, pollution events, and other disasters common in India while enabling continuous health support through on-device intelligence.', 'hardware', 'Qualcomm Inc', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26182', 'Automated Attribution of Unknown Cryptocurrency Wallets to Nearest Virtual Asset Service Providers (VASPs) through Blockchain Intelligence APIs', 'software', 'Ministry of Home Affairs', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26183', 'Real-Time Identification of Fraud-Linked Cryptocurrency Exchanges from Victim-Reported Suspect Wallet Addresses through Automated Blockchain Analytics', 'software', 'Ministry of Home Affairs', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26184', 'Development of a Predictive Analytics Framework for Cybercrime Complaints to Forecast Likely Cash Withdrawal Locations in Advance, Enabling Generation of Actionable Intelligence for Timely and Proactive Cybercrime Intervention.', 'software', 'Ministry of Home Affairs', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26185', 'Helmet mounted conformal antenna for tactical communications in urban CQB environments.', 'hardware', 'Ministry of Home Affairs', 'Robotics and Drones')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26186', 'AI-Based Predictive Personnel Stress and Welfare Monitoring System for Uniformed Forces', 'software', 'Ministry of Home Affairs', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26187', 'AI-Based Intelligent Video Analytics Platform for Border Surveillance using existing CCTV Infrastructure.', 'software', 'Ministry of Home Affairs', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26188', 'Al-Based Fake Identity & Document Screening System', 'software', 'Ministry of Home Affairs', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26189', 'AI-Powered Criminal Network Analysis System', 'software', 'Ministry of Home Affairs', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26190', 'Secure Digital Document Management System for Legal and Investigation Documents', 'software', 'Ministry of Home Affairs', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26191', 'Intelligent Identification of Hazard-Based Red Zones, Carrying Capacity Assessment, and Immediate Relocation Needs for Vulnerable Habitations', 'software', 'Ministry of Home Affairs', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26192', 'Flash Flood Prediction System for Hilly Regions using Multi-Source Data Theme', 'software', 'Ministry of Home Affairs', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26193', 'Student Innovation-Developing solutions, keeping in mind the need to enhance the primary sector of India - Agriculture and to manage and process our agriculture produce.', 'software', 'AICTE', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26194', 'Student Innovation-Provide ideas in a decentralized and distributed ledger technology used to store digital information that powers cryptocurrencies and NFTs and can radically change multiple sectors.', 'software', 'AICTE', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26195', 'Student Innovation-Solutions could be in the form of waste segregation, disposal, and improve sanitization system.', 'software', 'AICTE', 'Clean & Green Technology')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26196', 'Student Innovation-Ideas that can boost fitness activities and assist in keeping fit.', 'software', 'AICTE', 'Fitness & Sports')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26197', 'Student Innovation-Ideas that showcase the rich cultural heritage and traditions of India.', 'software', 'AICTE', 'Heritage & Culture')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26198', 'Student Innovation-Cutting-edge technology in these sectors continues to be in demand. Recent shifts in healthcare trends, growing populations also present an array of opportunities for innovation.', 'software', 'AICTE', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26199', 'Student Innovation-Technology ideas in tertiary sectors like Hospitality, Financial Services, Entertainment and Retail.', 'software', 'AICTE', 'Miscellaneous')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26200', 'Student Innovation-Innovative ideas that help manage and generate renewable /sustainable sources more efficiently', 'software', 'AICTE', 'Renewable / Sustainable Energy')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26201', 'Student Innovation-There is a need to design drones and robots that can solve some of the pressing challenges of India such as handling medical emergencies, search and rescue operations, etc.', 'software', 'AICTE', 'Robotics and Drones')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26202', 'Student Innovation-Ideas focused on the intelligent use of resources for transforming and advancements of technology with combining the artificial intelligence to explore more various sources and get valuable insights.', 'software', 'AICTE', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26203', 'Student Innovation-Creating intelligent devices to improve commutation sector.', 'software', 'AICTE', 'Smart Vehicles')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26204', 'Student Innovation-A solution/idea that can boost the current situation of the tourism industries including hotels, travel and others.', 'software', 'AICTE', 'Travel & Tourism')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26205', 'Student Innovation-Submit your ideas to address the growing pressures on the city’s resources, transport networks, and logistic infrastructure.', 'software', 'AICTE', 'Transportation & Logistics')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26206', 'Student Innovation-Disaster management includes ideas related to risk mitigation, Planning and management before, after or during a disaster.', 'software', 'AICTE', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26207', 'Student Innovation-Smart education,a concept that describes learning in digital age. It enables learners to learn more effectively, efficiently, flexibly and comfortably.', 'software', 'AICTE', 'Smart Education')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26208', 'Student Innovation-Challenge your creative mind to conceptualize and develop unique toys and games based on our civilization, history, and culture etc.', 'software', 'AICTE', 'Toys & Games')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26209', 'Student Innovation-Space technology refers to the application of engineering principles to the design, development, manufacture, and operation of devices and systems for space travel and exploration.', 'software', 'AICTE', 'Space Technology')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26210', 'Student Innovation-Developing solutions, keeping in mind the need to enhance the primary sector of India - Agriculture and to manage and process our agriculture produce.', 'hardware', 'AICTE', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26211', 'Student Innovation-Provide ideas in a decentralized and distributed ledger technology used to store digital information that powers cryptocurrencies and NFTs and can radically change multiple sectors.', 'hardware', 'AICTE', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26212', 'Student Innovation-Solutions could be in the form of waste segregation, disposal, and improve sanitization system.', 'hardware', 'AICTE', 'Clean & Green Technology')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26213', 'Student Innovation-Ideas that can boost fitness activities and assist in keeping fit.', 'hardware', 'AICTE', 'Fitness & Sports')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26214', 'Student Innovation-Ideas that showcase the rich cultural heritage and traditions of India.', 'hardware', 'AICTE', 'Heritage & Culture')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26215', 'Student Innovation-Cutting-edge technology in these sectors continues to be in demand. Recent shifts in healthcare trends, growing populations also present an array of opportunities for innovation.', 'hardware', 'AICTE', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26216', 'Student Innovation-Technology ideas in tertiary sectors like Hospitality, Financial Services, Entertainment and Retail.', 'hardware', 'AICTE', 'Miscellaneous')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26217', 'Student Innovation-Innovative ideas that help manage and generate renewable /sustainable sources more efficiently', 'hardware', 'AICTE', 'Renewable / Sustainable Energy')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26218', 'Student Innovation-There is a need to design drones and robots that can solve some of the pressing challenges of India such as handling medical emergencies, search and rescue operations, etc.', 'hardware', 'AICTE', 'Robotics and Drones')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26219', 'Student Innovation-Ideas focused on the intelligent use of resources for transforming and advancements of technology with combining the artificial intelligence to explore more various sources and get valuable insights.', 'hardware', 'AICTE', 'Smart Automation')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26220', 'Student Innovation-Creating intelligent devices to improve commutation sector.', 'hardware', 'AICTE', 'Smart Vehicles')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26221', 'Student Innovation-A solution/idea that can boost the current situation of the tourism industries including hotels, travel and others.', 'hardware', 'AICTE', 'Travel & Tourism')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26222', 'Student Innovation-Submit your ideas to address the growing pressures on the city’s resources, transport networks, and logistic infrastructure.', 'hardware', 'AICTE', 'Transportation & Logistics')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26223', 'Student Innovation-Disaster management includes ideas related to risk mitigation, Planning and management before, after or during a disaster.', 'hardware', 'AICTE', 'Disaster Management')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26224', 'Student Innovation-Smart education,a concept that describes learning in digital age. It enables learners to learn more effectively, efficiently, flexibly and comfortably.', 'hardware', 'AICTE', 'Smart Education')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26225', 'Student Innovation-Challenge your creative mind to conceptualize and develop unique toys and games based on our civilization, history, and culture etc.', 'hardware', 'AICTE', 'Toys & Games')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26226', 'Student Innovation-Space technology refers to the application of engineering principles to the design, development, manufacture, and operation of devices and systems for space travel and exploration.', 'hardware', 'AICTE', 'Space Technology')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26227', 'Semantic Retrieval and Multi-Temporal Change Analysis of Satellite lmagery.', 'software', 'Ministry of defence (MoD)', 'Space Technology')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26228', 'Trustworthy Computer Vision Integrity Assurance for Data, Models and Inference Outputs in Multi-Contributor Pipelines', 'software', 'Ministry of defence (MoD)', 'Blockchain & Cybersecurity')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26229', 'Kabadiwala Connect – Bringing the Informal Collector into the Formal Recycling
+Chain', 'software', 'Ministry of Mines (MoM)', 'Clean & Green Technology')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26230', 'Breath-Based Detection Device for Drug Consumption', 'hardware', 'Ministry of Home Affairs', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26231', 'Digital Companion for Field Drug Testing', 'software', 'Ministry of Home Affairs', 'MedTech / BioTech / HealthTech')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26232', 'Low-Cost loT Block chain Nodes for Farm-to-Fork Traceability', 'hardware', 'Ministry of Food Processing Industries (MoFPI)', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+INSERT INTO problem_statements (id, title, category, organization, theme) VALUES ('SIH26233', 'Inline Microbial Contamination Detection Using Hyperspectral
+Edge Sensors', 'hardware', 'Ministry of Food Processing Industries (MoFPI)', 'Agriculture, FoodTech & Rural Development')
+  ON CONFLICT (id) DO UPDATE SET
+    title        = EXCLUDED.title,
+    category     = EXCLUDED.category,
+    organization = EXCLUDED.organization,
+    theme        = EXCLUDED.theme;
+
+COMMIT;

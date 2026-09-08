@@ -45,7 +45,7 @@ export function AdminDashboard() {
       .select(`
         *,
         problem_statements ( title ),
-        team_members ( id, gender, name, email:college_email )
+        team_members ( id, gender, name, email:college_email, phone, reg_no, is_leader )
       `)
       .order('created_at', { ascending: false });
       
@@ -55,18 +55,11 @@ export function AdminDashboard() {
 
   const updateStatus = async (teamId: string, newStatus: string) => {
     const originalTeams = [...teams];
-    
-    // Optimistic update
     setTeams(teams.map(t => t.id === teamId ? { ...t, status: newStatus } : t));
-    
-    const { error } = await supabase
-      .from('teams')
-      .update({ status: newStatus })
-      .eq('id', teamId);
-      
+    const { error } = await supabase.from('teams').update({ status: newStatus }).eq('id', teamId);
     if (error) {
       console.error(error);
-      setTeams(originalTeams); // Rollback
+      setTeams(originalTeams);
       alert('Failed to update status');
     }
   };
@@ -74,25 +67,58 @@ export function AdminDashboard() {
   const exportCSV = () => {
     if (!filteredTeams.length) return;
     
-    const headers = ['Team Code', 'Team Name', 'Category', 'Status', 'Leader Name', 'Leader Email', 'Members'];
-    const rows = filteredTeams.map(t => [
-      t.team_code,
-      `"${t.team_name}"`,
-      t.category,
-      t.status,
-      `"${t.leader_name}"`,
-      t.leader_email,
-      `"${t.team_members?.map((m: any) => `${m.name} (${m.email})`).join(', ')}"`
-    ]);
+    // Create robust headers for all form data
+    const headers = [
+      'Team Code', 'Team Name', 'Category', 'Status', 'PS ID', 'PS Title',
+      'Leader Name', 'Leader Email', 'Leader Mobile', 'Leader Reg No', 'Leader Gender'
+    ];
+    
+    // Support up to 5 additional members (6 total including leader)
+    for (let i = 2; i <= 6; i++) {
+      headers.push(`Member ${i} Name`, `Member ${i} Email`, `Member ${i} Mobile`, `Member ${i} Reg No`, `Member ${i} Gender`);
+    }
+
+    const rows = filteredTeams.map(t => {
+      const psTitle = t.problem_statements?.title || '';
+      const members = t.team_members || [];
+      const leader = members.find((m: any) => m.is_leader) || {};
+      const nonLeaders = members.filter((m: any) => !m.is_leader);
+
+      const row = [
+        t.team_code,
+        `"${t.team_name}"`,
+        t.category,
+        t.status,
+        t.ps_id,
+        `"${psTitle.replace(/"/g, '""')}"`,
+        `"${t.leader_name}"`,
+        t.leader_email,
+        t.leader_mobile || leader.phone || '',
+        t.leader_reg_no || leader.reg_no || '',
+        leader.gender || ''
+      ];
+
+      // Add details for the 5 extra members (or empty if less than 5)
+      for (let i = 0; i < 5; i++) {
+        if (nonLeaders[i]) {
+          const m = nonLeaders[i];
+          row.push(`"${m.name}"`, m.email || '', m.phone || '', m.reg_no || '', m.gender || '');
+        } else {
+          row.push('', '', '', '', '');
+        }
+      }
+      return row;
+    });
     
     const csv = [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
     const blob = new Blob([csv], { type: 'text/csv' });
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `sih-teams-${new Date().toISOString().split('T')[0]}.csv`;
+    a.download = `sih-registration-data-${new Date().toISOString().split('T')[0]}.csv`;
     a.click();
   };
+
 
   if (loading) return <div className="p-12">Loading...</div>;
   if (!isAdmin) return <div className="p-12 text-ember">Access Denied. Admins only.</div>;
